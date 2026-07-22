@@ -1,10 +1,10 @@
 {
   "status": "dry_run",
-  "generated_at": "2026-07-22T22:38:28.212Z",
+  "generated_at": "2026-07-22T23:36:10.226Z",
   "repo": "asura-ai-dev/garuda",
   "repair_repo": "asura-ai-dev/clawsweeper",
   "review_repo": "asura-ai-dev/clawsweeper",
-  "since": "2026-07-22T19:38:27.454Z",
+  "since": "2026-07-22T20:36:09.185Z",
   "execute": false,
   "force_reprocess": false,
   "forced_replay_attempt_id": null,
@@ -35,15 +35,15 @@
   },
   "short_circuited": false,
   "timings": {
-    "total_ms": 758,
+    "total_ms": 1041,
     "phases": [
       {
         "name": "list_candidate_comments",
-        "ms": 757
+        "ms": 1039
       },
       {
         "name": "prehydrate_comment_commands",
-        "ms": 1
+        "ms": 0
       },
       {
         "name": "classify_comment_commands",
