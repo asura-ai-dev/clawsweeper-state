@@ -1,10 +1,10 @@
 {
   "status": "dry_run",
-  "generated_at": "2026-07-23T04:26:23.376Z",
+  "generated_at": "2026-07-23T06:45:20.552Z",
   "repo": "asura-ai-dev/garuda",
   "repair_repo": "asura-ai-dev/clawsweeper",
   "review_repo": "asura-ai-dev/clawsweeper",
-  "since": "2026-07-23T01:26:22.010Z",
+  "since": "2026-07-23T03:45:19.418Z",
   "execute": false,
   "force_reprocess": false,
   "forced_replay_attempt_id": null,
@@ -13,7 +13,7 @@
   "comment_ids": [],
   "status_comment_id": null,
   "max_autoclose_targets": 8,
-  "scanned_comments": 2,
+  "scanned_comments": 6,
   "commands_seen": 0,
   "actionable": 0,
   "trusted_bots": [
@@ -35,11 +35,11 @@
   },
   "short_circuited": false,
   "timings": {
-    "total_ms": 1365,
+    "total_ms": 1135,
     "phases": [
       {
         "name": "list_candidate_comments",
-        "ms": 1364
+        "ms": 1132
       },
       {
         "name": "prehydrate_comment_commands",
