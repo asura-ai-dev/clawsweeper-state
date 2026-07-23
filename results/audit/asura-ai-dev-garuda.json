@@ -1,0 +1,138 @@
+{
+  "generatedAt": "2026-07-23T03:38:13.841Z",
+  "targetRepo": "asura-ai-dev/garuda",
+  "scan": {
+    "complete": true,
+    "pagesScanned": 1,
+    "openItemsSeen": 6
+  },
+  "counts": {
+    "itemRecords": 1,
+    "closedRecords": 0,
+    "missingOpen": 5,
+    "missingEligibleOpen": 1,
+    "missingMaintainerOpen": 0,
+    "missingProtectedOpen": 0,
+    "missingRecentOpen": 4,
+    "openArchived": 0,
+    "staleItemRecords": 0,
+    "duplicateRecords": 0,
+    "protectedProposed": 0,
+    "staleReviews": 0
+  },
+  "findings": {
+    "missingOpen": [
+      {
+        "number": 68,
+        "kind": "issue",
+        "title": "契約検討: terminal stop後のresume許可(T-04 04-2節)をUX/監査観点で見直すべきか",
+        "labels": [],
+        "authorAssociation": "OWNER",
+        "createdAt": "2026-07-11T23:22:22Z",
+        "updatedAt": "2026-07-23T02:08:29Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 132,
+        "kind": "pull_request",
+        "title": "fix(cli): 58列未満へのresizeで承認カードが重複するのを修正",
+        "labels": [],
+        "authorAssociation": "OWNER",
+        "createdAt": "2026-07-22T22:10:17Z",
+        "updatedAt": "2026-07-22T22:10:17Z",
+        "missingReason": "recently_created"
+      },
+      {
+        "number": 133,
+        "kind": "pull_request",
+        "title": "cli: status line機能のPhase 1を追加",
+        "labels": [],
+        "authorAssociation": "OWNER",
+        "createdAt": "2026-07-22T22:18:57Z",
+        "updatedAt": "2026-07-22T22:22:36Z",
+        "missingReason": "recently_created"
+      },
+      {
+        "number": 134,
+        "kind": "pull_request",
+        "title": "feat(gateway): persona単位で常駐セッションのmodelを明示変更できるようにする",
+        "labels": [],
+        "authorAssociation": "OWNER",
+        "createdAt": "2026-07-23T01:17:52Z",
+        "updatedAt": "2026-07-23T01:20:56Z",
+        "missingReason": "recently_created"
+      },
+      {
+        "number": 135,
+        "kind": "pull_request",
+        "title": "feat(cli): status lineのカスタムコマンド実行器(Phase 1-4)を追加",
+        "labels": [],
+        "authorAssociation": "OWNER",
+        "createdAt": "2026-07-23T01:41:44Z",
+        "updatedAt": "2026-07-23T01:41:44Z",
+        "missingReason": "recently_created"
+      }
+    ],
+    "missingEligibleOpen": [
+      {
+        "number": 68,
+        "kind": "issue",
+        "title": "契約検討: terminal stop後のresume許可(T-04 04-2節)をUX/監査観点で見直すべきか",
+        "labels": [],
+        "authorAssociation": "OWNER",
+        "createdAt": "2026-07-11T23:22:22Z",
+        "updatedAt": "2026-07-23T02:08:29Z",
+        "missingReason": "eligible"
+      }
+    ],
+    "missingMaintainerOpen": [],
+    "missingProtectedOpen": [],
+    "missingRecentOpen": [
+      {
+        "number": 132,
+        "kind": "pull_request",
+        "title": "fix(cli): 58列未満へのresizeで承認カードが重複するのを修正",
+        "labels": [],
+        "authorAssociation": "OWNER",
+        "createdAt": "2026-07-22T22:10:17Z",
+        "updatedAt": "2026-07-22T22:10:17Z",
+        "missingReason": "recently_created"
+      },
+      {
+        "number": 133,
+        "kind": "pull_request",
+        "title": "cli: status line機能のPhase 1を追加",
+        "labels": [],
+        "authorAssociation": "OWNER",
+        "createdAt": "2026-07-22T22:18:57Z",
+        "updatedAt": "2026-07-22T22:22:36Z",
+        "missingReason": "recently_created"
+      },
+      {
+        "number": 134,
+        "kind": "pull_request",
+        "title": "feat(gateway): persona単位で常駐セッションのmodelを明示変更できるようにする",
+        "labels": [],
+        "authorAssociation": "OWNER",
+        "createdAt": "2026-07-23T01:17:52Z",
+        "updatedAt": "2026-07-23T01:20:56Z",
+        "missingReason": "recently_created"
+      },
+      {
+        "number": 135,
+        "kind": "pull_request",
+        "title": "feat(cli): status lineのカスタムコマンド実行器(Phase 1-4)を追加",
+        "labels": [],
+        "authorAssociation": "OWNER",
+        "createdAt": "2026-07-23T01:41:44Z",
+        "updatedAt": "2026-07-23T01:41:44Z",
+        "missingReason": "recently_created"
+      }
+    ],
+    "openArchived": [],
+    "staleItemRecords": [],
+    "duplicateRecords": [],
+    "protectedProposed": [],
+    "staleReviews": []
+  }
+}
