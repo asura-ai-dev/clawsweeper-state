@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "generatedAt": "2026-07-23T04:30:58.016Z",
+  "updatedAt": "2026-07-23T02:18:14Z",
+  "subject": {
+    "repo": "asura-ai-dev/garuda",
+    "kind": "issue",
+    "number": 65,
+    "title": "runtime-a: ClaudeJsonlProcess.attach()がsnapshotのみでstreaming/tailに対応していない(05-1 observe設計不備)",
+    "url": "https://github.com/asura-ai-dev/garuda/issues/65",
+    "state": "open",
+    "labels": [
+      "P1",
+      "impact:other",
+      "issue-rating: 🐚 platinum hermit",
+      "clawsweeper:needs-live-repro"
+    ],
+    "createdAt": "2026-07-11T13:04:14Z",
+    "updatedAt": "2026-07-23T02:18:14Z"
+  },
+  "lane": "manual_review",
+  "priority": "P1",
+  "question": "Does the repository owner confirm that the merged streaming/tail implementation should close this owner-authored issue?",
+  "rationale": "Automated cleanup must not close owner-authored items, even where the linked merged work appears to resolve the report.",
+  "options": [
+    {
+      "title": "Confirm and close manually",
+      "body": "Confirm that the merged follow-up is the intended resolution and close this issue manually.",
+      "recommended": true
+    },
+    {
+      "title": "Keep open for further verification",
+      "body": "Retain the issue if a live Claude CLI observation run still exposes a missing streaming case.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Confirm and close manually",
+    "body": "Confirm that the merged follow-up is the intended resolution and close this issue manually.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "asura-ai-dev",
+    "reason": "The owner authored the original runtime-a work and its linked corrective follow-up.",
+    "confidence": "high"
+  },
+  "source": {
+    "reportPath": "records/asura-ai-dev-garuda/items/65.md",
+    "reviewedAt": "2026-07-23T04:30:58.016Z",
+    "mainSha": "a717cdaebe9ee31bd67221dbd147cefa8801f02d"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "generatedAt": "2026-07-23T04:31:32.925Z",
+  "updatedAt": "2026-07-23T04:29:55Z",
+  "subject": {
+    "repo": "asura-ai-dev/garuda",
+    "kind": "pull_request",
+    "number": 135,
+    "title": "feat(cli): status lineのカスタムコマンド実行器(Phase 1-4)を追加",
+    "url": "https://github.com/asura-ai-dev/garuda/pull/135",
+    "state": "open",
+    "labels": [],
+    "createdAt": "2026-07-23T01:41:44Z",
+    "updatedAt": "2026-07-23T04:29:55Z",
+    "headSha": "43527fe91a6d63ed4637ef0c2804d1ef1f287fe8"
+  },
+  "lane": "security_boundary",
+  "priority": "P2",
+  "question": "Should the CLI support unsandboxed `/bin/sh -c` execution from trusted local status-line settings in this phase, and is Windows outside that supported scope?",
+  "rationale": "The PR intentionally introduces a local command-execution boundary and documents a Windows lifecycle caveat; the intended trust and platform contract need maintainer confirmation.",
+  "options": [
+    {
+      "title": "Approve trusted-local scope",
+      "body": "Treat status-line settings as trusted local configuration, document the supported Unix platforms, and review the rebased implementation.",
+      "recommended": true
+    },
+    {
+      "title": "Require broader platform support",
+      "body": "Fix Windows process bookkeeping and add platform-specific validation before accepting the feature contract.",
+      "recommended": false
+    },
+    {
+      "title": "Defer command execution",
+      "body": "Keep the built-in status line only until sandboxing or a broader execution policy is decided.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Approve trusted-local scope",
+    "body": "Treat status-line settings as trusted local configuration, document the supported Unix platforms, and review the rebased implementation.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "asura-ai-dev",
+    "reason": "The repository owner authored the prerequisite status-line design and this implementation phase.",
+    "confidence": "high"
+  },
+  "source": {
+    "reportPath": "records/asura-ai-dev-garuda/items/135.md",
+    "reviewedAt": "2026-07-23T04:31:32.925Z",
+    "mainSha": "a717cdaebe9ee31bd67221dbd147cefa8801f02d"
+  }
+}

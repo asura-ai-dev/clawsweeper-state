@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "generatedAt": "2026-07-23T04:31:10.249Z",
+  "updatedAt": "2026-07-23T04:29:45Z",
+  "subject": {
+    "repo": "asura-ai-dev/garuda",
+    "kind": "pull_request",
+    "number": 133,
+    "title": "cli: status line機能のPhase 1を追加",
+    "url": "https://github.com/asura-ai-dev/garuda/pull/133",
+    "state": "open",
+    "labels": [],
+    "createdAt": "2026-07-22T22:18:57Z",
+    "updatedAt": "2026-07-23T04:29:45Z",
+    "headSha": "48ddbbe82bb574a8a5cbffd01ea414904c0c2c51"
+  },
+  "lane": "merge_risk",
+  "priority": "P2",
+  "question": "Should this owner-authored CLI feature be approved only after terminal-control sanitization is added to the status-line display path?",
+  "rationale": "The concrete repair is clear, but the repository policy requires explicit maintainer handling for owner-authored pull requests.",
+  "options": [
+    {
+      "title": "Require sanitization before merge",
+      "body": "Strip terminal-control bytes from dynamic status-line fields and add a regression test before approving the PR.",
+      "recommended": true
+    },
+    {
+      "title": "Accept the terminal-display risk",
+      "body": "Merge the feature with the known ability for persona-derived data to alter terminal state.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Require sanitization before merge",
+    "body": "Strip terminal-control bytes from dynamic status-line fields and add a regression test before approving the PR.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "asura-ai-dev",
+    "reason": "They own the proposed status-line feature and its follow-on design work.",
+    "confidence": "medium"
+  },
+  "source": {
+    "reportPath": "records/asura-ai-dev-garuda/items/133.md",
+    "reviewedAt": "2026-07-23T04:31:10.249Z",
+    "mainSha": "a717cdaebe9ee31bd67221dbd147cefa8801f02d"
+  }
+}
