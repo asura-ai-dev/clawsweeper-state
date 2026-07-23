@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "generatedAt": "2026-07-23T03:45:52.751Z",
+  "updatedAt": "2026-07-23T02:08:29Z",
+  "subject": {
+    "repo": "asura-ai-dev/garuda",
+    "kind": "issue",
+    "number": 68,
+    "title": "契約検討: terminal stop後のresume許可(T-04 04-2節)をUX/監査観点で見直すべきか",
+    "url": "https://github.com/asura-ai-dev/garuda/issues/68",
+    "state": "open",
+    "labels": [],
+    "createdAt": "2026-07-11T23:22:22Z",
+    "updatedAt": "2026-07-23T02:08:29Z"
+  },
+  "lane": "product_direction",
+  "priority": "P2",
+  "question": "Should terminally stopped sessions retain the current successful `resume()` transition with subsequent tool denial, or should terminal stops reject resume itself?",
+  "rationale": "Current main prevents the capability leak, but choosing the observable session and audit semantics changes a frozen cross-adapter contract.",
+  "options": [
+    {
+      "title": "Keep the current contract",
+      "body": "Continue allowing resume and rely on persisted terminal reasons plus tool-deny audit events; clarify the operator-facing interpretation if needed.",
+      "recommended": true
+    },
+    {
+      "title": "Reject terminal resumes",
+      "body": "Revise the RuntimeAdapterContract and conformance suite so terminal reasons cause resume to fail, then update every adapter consistently.",
+      "recommended": false
+    }
+  ],
+  "recommendation": {
+    "title": "Keep the current contract",
+    "body": "Continue allowing resume and rely on persisted terminal reasons plus tool-deny audit events; clarify the operator-facing interpretation if needed.",
+    "recommended": true
+  },
+  "likelyOwner": {
+    "person": "asura-ai-dev",
+    "reason": "This account authored the affected runtime work and explicitly framed the unresolved T-04 contract choice.",
+    "confidence": "high"
+  },
+  "source": {
+    "reportPath": "records/asura-ai-dev-garuda/items/68.md",
+    "reviewedAt": "2026-07-23T03:45:52.751Z",
+    "mainSha": "7d28da7f35eaef0b167fde0fc5a29c148707bb44"
+  }
+}
