@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T03:38:13.841Z",
+  "generatedAt": "2026-07-23T03:44:03.853Z",
   "targetRepo": "asura-ai-dev/garuda",
   "scan": {
     "complete": true,
@@ -29,7 +29,7 @@
         "labels": [],
         "authorAssociation": "OWNER",
         "createdAt": "2026-07-11T23:22:22Z",
-        "updatedAt": "2026-07-23T02:08:29Z",
+        "updatedAt": "2026-07-23T03:43:41Z",
         "missingReason": "eligible"
       },
       {
@@ -81,7 +81,7 @@
         "labels": [],
         "authorAssociation": "OWNER",
         "createdAt": "2026-07-11T23:22:22Z",
-        "updatedAt": "2026-07-23T02:08:29Z",
+        "updatedAt": "2026-07-23T03:43:41Z",
         "missingReason": "eligible"
       }
     ],
