@@ -1,0 +1,2449 @@
+{
+  "generatedAt": "2026-07-23T03:39:08.189Z",
+  "targetRepo": "openclaw/clawhub",
+  "scan": {
+    "complete": true,
+    "pagesScanned": 1,
+    "openItemsSeen": 75
+  },
+  "counts": {
+    "itemRecords": 0,
+    "closedRecords": 0,
+    "missingOpen": 75,
+    "missingEligibleOpen": 58,
+    "missingMaintainerOpen": 0,
+    "missingProtectedOpen": 7,
+    "missingRecentOpen": 10,
+    "openArchived": 0,
+    "staleItemRecords": 0,
+    "duplicateRecords": 0,
+    "protectedProposed": 0,
+    "staleReviews": 0
+  },
+  "findings": {
+    "missingOpen": [
+      {
+        "number": 86,
+        "kind": "issue",
+        "title": "Feature request: Shareable cron job templates",
+        "labels": [
+          "P3",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "issue-rating: 🌊 off-meta tidepool"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-02-01T09:23:13Z",
+        "updatedAt": "2026-07-19T18:57:59Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 575,
+        "kind": "issue",
+        "title": "Enforce uppercase SKILL.md and PROTOCOL.md",
+        "labels": [
+          "P2",
+          "clawsweeper:source-repro",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:linked-pr-open",
+          "issue-rating: 🦞 diamond lobster",
+          "impact:other"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-03-02T05:35:13Z",
+        "updatedAt": "2026-07-19T15:46:54Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 606,
+        "kind": "issue",
+        "title": "feat: add i18n support with zh-CN (Simplified Chinese) locale",
+        "labels": [
+          "P3",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "issue-rating: 🌊 off-meta tidepool",
+          "impact:other"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-03-05T15:19:31Z",
+        "updatedAt": "2026-07-19T18:58:06Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 792,
+        "kind": "issue",
+        "title": "Feature: Inject post-install/update system event into active session",
+        "labels": [
+          "enhancement",
+          "P2",
+          "clawsweeper:source-repro",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "impact:session-state",
+          "issue-rating: 🦞 diamond lobster",
+          "impact:ux-friction"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-03-13T00:17:03Z",
+        "updatedAt": "2026-07-19T18:58:08Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 1288,
+        "kind": "issue",
+        "title": "bug: publish-plugin page cannot upload plugin folders; auto-changelog overwrites edits; package changelog uses wrong history",
+        "labels": [
+          "P2",
+          "clawsweeper:source-repro",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:linked-pr-open",
+          "impact:data-loss",
+          "issue-rating: 🦞 diamond lobster"
+        ],
+        "authorAssociation": "CONTRIBUTOR",
+        "createdAt": "2026-03-26T10:27:55Z",
+        "updatedAt": "2026-07-19T18:58:09Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 1377,
+        "kind": "issue",
+        "title": "Bug: License incorrectly displayed as MIT-0 instead of MIT",
+        "labels": [
+          "P2",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:linked-pr-open",
+          "clawsweeper:current-main-repro",
+          "issue-rating: 🦀 challenger crab",
+          "impact:other"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-03-29T09:47:05Z",
+        "updatedAt": "2026-07-19T18:58:04Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 1383,
+        "kind": "issue",
+        "title": "Feature request: add prefix/list-style skill discovery to ClawHub CLI search",
+        "labels": [
+          "P2",
+          "clawsweeper:source-repro",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:linked-pr-open",
+          "issue-rating: 🦞 diamond lobster",
+          "impact:other"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-03-29T13:51:53Z",
+        "updatedAt": "2026-07-19T15:46:59Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 1679,
+        "kind": "issue",
+        "title": "ClawHub /api/v1/skills/coding-agent failed (404): Skill not found",
+        "labels": [
+          "P2",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:current-main-repro",
+          "issue-rating: 🦀 challenger crab",
+          "impact:other"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-04-14T20:21:19Z",
+        "updatedAt": "2026-07-19T15:46:47Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 1767,
+        "kind": "issue",
+        "title": "Feature request: Local plugin scanner CLI for pre-publish validation",
+        "labels": [
+          "P2",
+          "clawsweeper:source-repro",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "issue-rating: 🦞 diamond lobster"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-04-21T16:06:49Z",
+        "updatedAt": "2026-07-19T15:46:56Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 1946,
+        "kind": "issue",
+        "title": "Edit Version Changelogs",
+        "labels": [
+          "P3",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "issue-rating: 🌊 off-meta tidepool"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-04-30T14:51:44Z",
+        "updatedAt": "2026-07-19T18:57:54Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2032,
+        "kind": "issue",
+        "title": "skill safe-encryption-skill: Spec Prohibits File Output But CLI Tool's Standard Interface Is File Output",
+        "labels": [
+          "P2",
+          "clawsweeper:source-repro",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "issue-rating: 🦞 diamond lobster"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-05-05T19:25:39Z",
+        "updatedAt": "2026-07-19T19:25:37Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2216,
+        "kind": "issue",
+        "title": "RFC: Period-based popularity for publishers, skills, and plugins",
+        "labels": [
+          "P2",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:fix-shape-clear",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "issue-rating: 🌊 off-meta tidepool",
+          "impact:other"
+        ],
+        "authorAssociation": "MEMBER",
+        "createdAt": "2026-05-14T14:32:23Z",
+        "updatedAt": "2026-07-19T19:25:36Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2272,
+        "kind": "issue",
+        "title": "RFC: Define a public review path for vetted community plugins",
+        "labels": [
+          "r: rescan-guidance",
+          "security",
+          "type: rfc",
+          "status: review",
+          "area: moderation",
+          "area: security",
+          "P2",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:fix-shape-clear",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "issue-rating: 🌊 off-meta tidepool"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-05-15T09:53:11Z",
+        "updatedAt": "2026-06-07T13:54:57Z",
+        "missingReason": "protected_label"
+      },
+      {
+        "number": 2295,
+        "kind": "issue",
+        "title": "clawhub install does not register skill hooks automatically",
+        "labels": [
+          "P2",
+          "clawsweeper:source-repro",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "impact:session-state",
+          "issue-rating: 🦞 diamond lobster",
+          "impact:ux-friction"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-05-18T18:04:13Z",
+        "updatedAt": "2026-07-19T19:25:48Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2317,
+        "kind": "issue",
+        "title": "Consolidate skill/plugin commands in `clawhub` cli",
+        "labels": [
+          "P3",
+          "clawsweeper:source-repro",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "issue-rating: 🦞 diamond lobster",
+          "impact:other"
+        ],
+        "authorAssociation": "COLLABORATOR",
+        "createdAt": "2026-05-19T19:40:59Z",
+        "updatedAt": "2026-07-19T18:58:06Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2320,
+        "kind": "issue",
+        "title": "RFC: Org claim disputes and account recovery",
+        "labels": [
+          "type: rfc",
+          "status: review",
+          "area: moderation",
+          "area: security",
+          "P2",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "impact:auth-provider",
+          "issue-rating: 🌊 off-meta tidepool"
+        ],
+        "authorAssociation": "COLLABORATOR",
+        "createdAt": "2026-05-19T20:21:59Z",
+        "updatedAt": "2026-07-19T15:47:00Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2321,
+        "kind": "issue",
+        "title": "RFC: Content policy categories",
+        "labels": [
+          "type: rfc",
+          "status: review",
+          "area: moderation",
+          "area: security",
+          "P3",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "issue-rating: 🌊 off-meta tidepool"
+        ],
+        "authorAssociation": "COLLABORATOR",
+        "createdAt": "2026-05-19T20:22:01Z",
+        "updatedAt": "2026-07-19T18:58:09Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2330,
+        "kind": "issue",
+        "title": "Support installing all skills/plugins from a publisher",
+        "labels": [
+          "P3",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "issue-rating: 🌊 off-meta tidepool",
+          "impact:other"
+        ],
+        "authorAssociation": "COLLABORATOR",
+        "createdAt": "2026-05-19T23:49:48Z",
+        "updatedAt": "2026-07-19T18:57:54Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2356,
+        "kind": "issue",
+        "title": "Hard-delete or runtimeId migration needed for @apify/apify-openclaw-plugin",
+        "labels": [
+          "P2",
+          "clawsweeper:source-repro",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "issue-rating: 🦞 diamond lobster"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-05-21T13:58:44Z",
+        "updatedAt": "2026-07-19T15:47:02Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2365,
+        "kind": "issue",
+        "title": "Add standalone GitHub Action for plugin publishing",
+        "labels": [
+          "security",
+          "P2",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "issue-rating: 🌊 off-meta tidepool"
+        ],
+        "authorAssociation": "COLLABORATOR",
+        "createdAt": "2026-05-21T18:57:33Z",
+        "updatedAt": "2026-05-27T01:08:10Z",
+        "missingReason": "protected_label"
+      },
+      {
+        "number": 2367,
+        "kind": "issue",
+        "title": "Npm-valid package scopes with dots/underscores cannot map to ClawHub publishers",
+        "labels": [
+          "P2",
+          "clawsweeper:source-repro",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "issue-rating: 🦞 diamond lobster"
+        ],
+        "authorAssociation": "COLLABORATOR",
+        "createdAt": "2026-05-21T19:51:52Z",
+        "updatedAt": "2026-07-19T15:47:03Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2411,
+        "kind": "pull_request",
+        "title": "feat: add plugin verify evidence endpoint",
+        "labels": [
+          "P2",
+          "merge-risk: 🚨 compatibility",
+          "merge-risk: 🚨 security-boundary",
+          "status: 📣 needs proof",
+          "rating: 🦪 silver shellfish"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-05-27T07:57:38Z",
+        "updatedAt": "2026-07-22T06:33:36Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2524,
+        "kind": "issue",
+        "title": "GitHub OAuth consent screen uses personal ClawdHub app branding",
+        "labels": [
+          "bug",
+          "area: security",
+          "P2",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "clawsweeper:needs-info",
+          "impact:security",
+          "impact:auth-provider",
+          "issue-rating: 🦐 gold shrimp"
+        ],
+        "authorAssociation": "COLLABORATOR",
+        "createdAt": "2026-06-05T21:45:16Z",
+        "updatedAt": "2026-07-17T16:35:45Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2873,
+        "kind": "pull_request",
+        "title": "fix: preserve selected GitHub skills across resync",
+        "labels": [
+          "P2",
+          "merge-risk: 🚨 compatibility",
+          "rating: 🦐 gold shrimp",
+          "status: 👀 ready for maintainer look"
+        ],
+        "authorAssociation": "MEMBER",
+        "createdAt": "2026-06-25T07:46:43Z",
+        "updatedAt": "2026-07-21T19:35:03Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2898,
+        "kind": "pull_request",
+        "title": "fix: trust forwarded IPs from ClawHub edge",
+        "labels": [
+          "P2",
+          "merge-risk: 🚨 compatibility",
+          "merge-risk: 🚨 availability",
+          "status: ⏳ waiting on author",
+          "merge-risk: 🚨 automation",
+          "rating: 🦪 silver shellfish"
+        ],
+        "authorAssociation": "MEMBER",
+        "createdAt": "2026-06-26T16:44:59Z",
+        "updatedAt": "2026-07-22T06:34:24Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2925,
+        "kind": "issue",
+        "title": "Proposal: staged web performance audit and SSR auth plan",
+        "labels": [
+          "security"
+        ],
+        "authorAssociation": "MEMBER",
+        "createdAt": "2026-06-28T18:37:06Z",
+        "updatedAt": "2026-07-13T16:10:03Z",
+        "missingReason": "protected_label"
+      },
+      {
+        "number": 2943,
+        "kind": "issue",
+        "title": "RFC: cross-asset security signals in the skill review pipeline (docs/config/scripts)",
+        "labels": [
+          "security",
+          "type: rfc",
+          "status: review"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-01T13:03:51Z",
+        "updatedAt": "2026-07-01T13:04:04Z",
+        "missingReason": "protected_label"
+      },
+      {
+        "number": 2944,
+        "kind": "issue",
+        "title": "RFC: declared capability manifest",
+        "labels": [
+          "type: rfc",
+          "status: review",
+          "P2",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "impact:security",
+          "issue-rating: 🌊 off-meta tidepool"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-01T13:21:47Z",
+        "updatedAt": "2026-07-22T06:34:54Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2945,
+        "kind": "issue",
+        "title": "RFC: policy on agent-directed instruction content in docs",
+        "labels": [
+          "type: rfc",
+          "status: review",
+          "P2",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "issue-rating: 🌊 off-meta tidepool"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-01T13:25:00Z",
+        "updatedAt": "2026-07-22T06:35:22Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2947,
+        "kind": "pull_request",
+        "title": "Add package changelog previews for plugin publishing",
+        "labels": [
+          "P2",
+          "proof: sufficient",
+          "merge-risk: 🚨 security-boundary",
+          "status: 👀 ready for maintainer look",
+          "rating: 🐚 platinum hermit"
+        ],
+        "authorAssociation": "CONTRIBUTOR",
+        "createdAt": "2026-07-01T19:30:49Z",
+        "updatedAt": "2026-07-21T19:34:46Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2948,
+        "kind": "pull_request",
+        "title": "feat: add publisher feed model API",
+        "labels": [
+          "P2",
+          "rating: 🧂 unranked krab",
+          "merge-risk: 🚨 compatibility",
+          "status: 📣 needs proof"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-01T19:49:44Z",
+        "updatedAt": "2026-07-22T06:36:16Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2949,
+        "kind": "pull_request",
+        "title": "feat: clarify publisher state and discovery labels",
+        "labels": [
+          "P2",
+          "rating: 🧂 unranked krab",
+          "merge-risk: 🚨 compatibility",
+          "merge-risk: 🚨 security-boundary",
+          "status: 📣 needs proof"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-01T20:22:50Z",
+        "updatedAt": "2026-07-22T06:36:51Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2950,
+        "kind": "pull_request",
+        "title": "feat: add publisher follow graph API",
+        "labels": [
+          "P3",
+          "merge-risk: 🚨 compatibility",
+          "merge-risk: 🚨 security-boundary",
+          "status: 📣 needs proof",
+          "rating: 🦪 silver shellfish"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-01T21:10:23Z",
+        "updatedAt": "2026-07-22T06:37:57Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2953,
+        "kind": "pull_request",
+        "title": "feat: add OpenClaw registry export bridge",
+        "labels": [
+          "P2",
+          "proof: sufficient",
+          "merge-risk: 🚨 compatibility",
+          "status: 👀 ready for maintainer look",
+          "rating: 🐚 platinum hermit"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-01T22:14:18Z",
+        "updatedAt": "2026-07-22T06:38:47Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2958,
+        "kind": "pull_request",
+        "title": "feat: add publisher following and activity timeline",
+        "labels": [
+          "P3",
+          "rating: 🧂 unranked krab",
+          "merge-risk: 🚨 compatibility",
+          "merge-risk: 🚨 security-boundary",
+          "status: 📣 needs proof"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-03T20:47:10Z",
+        "updatedAt": "2026-07-22T06:39:48Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2964,
+        "kind": "pull_request",
+        "title": "Support declared MIT skill licenses",
+        "labels": [
+          "P2",
+          "merge-risk: 🚨 compatibility",
+          "status: 📣 needs proof",
+          "rating: 🦪 silver shellfish"
+        ],
+        "authorAssociation": "CONTRIBUTOR",
+        "createdAt": "2026-07-05T02:03:42Z",
+        "updatedAt": "2026-07-22T06:40:39Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2969,
+        "kind": "pull_request",
+        "title": "fix: add exact and prefix skill search modes",
+        "labels": [
+          "P2",
+          "status: 📣 needs proof",
+          "rating: 🦪 silver shellfish",
+          "merge-risk: 🚨 other"
+        ],
+        "authorAssociation": "CONTRIBUTOR",
+        "createdAt": "2026-07-06T10:57:03Z",
+        "updatedAt": "2026-07-22T06:41:16Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3005,
+        "kind": "pull_request",
+        "title": "feat: sign stored OpenClaw catalog publications",
+        "labels": [
+          "P2",
+          "rating: 🧂 unranked krab",
+          "merge-risk: 🚨 compatibility",
+          "merge-risk: 🚨 security-boundary",
+          "merge-risk: 🚨 availability",
+          "status: 📣 needs proof"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-08T02:56:50Z",
+        "updatedAt": "2026-07-23T03:30:09Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3006,
+        "kind": "pull_request",
+        "title": "Route org publisher abuse nominations to org review",
+        "labels": [
+          "P2",
+          "merge-risk: 🚨 security-boundary",
+          "status: ⏳ waiting on author",
+          "rating: 🐚 platinum hermit"
+        ],
+        "authorAssociation": "MEMBER",
+        "createdAt": "2026-07-08T04:37:27Z",
+        "updatedAt": "2026-07-22T06:42:59Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3023,
+        "kind": "pull_request",
+        "title": "Add dependency scanning for package releases",
+        "labels": [
+          "P2",
+          "merge-risk: 🚨 compatibility",
+          "merge-risk: 🚨 security-boundary",
+          "status: ⏳ waiting on author",
+          "rating: 🦐 gold shrimp"
+        ],
+        "authorAssociation": "MEMBER",
+        "createdAt": "2026-07-09T03:01:18Z",
+        "updatedAt": "2026-07-22T06:44:05Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3036,
+        "kind": "pull_request",
+        "title": "feat(skills): publish large bundles via staged upload",
+        "labels": [
+          "P2",
+          "rating: 🧂 unranked krab",
+          "merge-risk: 🚨 availability",
+          "status: 📣 needs proof"
+        ],
+        "authorAssociation": "CONTRIBUTOR",
+        "createdAt": "2026-07-09T17:48:55Z",
+        "updatedAt": "2026-07-21T19:34:46Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3051,
+        "kind": "issue",
+        "title": "GitHub OAuth consent still shows personal ClawdHub / steipete branding (reopen of #2524)",
+        "labels": [
+          "P2",
+          "clawsweeper:source-repro",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "impact:auth-provider",
+          "issue-rating: 🦞 diamond lobster",
+          "impact:ux-friction"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-10T05:23:01Z",
+        "updatedAt": "2026-07-22T06:44:39Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3064,
+        "kind": "issue",
+        "title": "perf: bound publisher profile, membership, and catalog reads",
+        "labels": [
+          "enhancement",
+          "P2",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-live-repro",
+          "issue-rating: 🐚 platinum hermit",
+          "impact:other"
+        ],
+        "authorAssociation": "MEMBER",
+        "createdAt": "2026-07-13T00:51:37Z",
+        "updatedAt": "2026-07-22T06:45:06Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3068,
+        "kind": "issue",
+        "title": "perf: measure and reduce the shared route entry bundle",
+        "labels": [
+          "enhancement",
+          "P3",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "issue-rating: 🌊 off-meta tidepool",
+          "impact:other"
+        ],
+        "authorAssociation": "MEMBER",
+        "createdAt": "2026-07-13T00:51:44Z",
+        "updatedAt": "2026-07-21T19:35:03Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3074,
+        "kind": "pull_request",
+        "title": "feat: forward package catalog metadata in publish workflow",
+        "labels": [
+          "P3",
+          "proof: sufficient",
+          "status: 👀 ready for maintainer look",
+          "rating: 🐚 platinum hermit"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-13T15:03:05Z",
+        "updatedAt": "2026-07-22T06:46:30Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3075,
+        "kind": "issue",
+        "title": "Expose trusted GitHub Actions publisher separately from artifact provenance",
+        "labels": [
+          "security"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-13T15:03:42Z",
+        "updatedAt": "2026-07-13T15:04:02Z",
+        "missingReason": "protected_label"
+      },
+      {
+        "number": 3076,
+        "kind": "issue",
+        "title": "Clarify or preserve skill source provenance from CLI publish",
+        "labels": [
+          "P2",
+          "clawsweeper:source-repro",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "issue-rating: 🦞 diamond lobster",
+          "impact:ux-friction"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-13T15:03:42Z",
+        "updatedAt": "2026-07-22T06:36:44Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3083,
+        "kind": "issue",
+        "title": "Proposal: optional pre-install known-bad check for ClawHub skills (free)",
+        "labels": [
+          "security"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-14T18:33:03Z",
+        "updatedAt": "2026-07-14T18:33:22Z",
+        "missingReason": "protected_label"
+      },
+      {
+        "number": 3086,
+        "kind": "issue",
+        "title": "Official external plugin review: @nexez/openclaw-nexez",
+        "labels": [
+          "security"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-15T03:39:27Z",
+        "updatedAt": "2026-07-15T03:39:41Z",
+        "missingReason": "protected_label"
+      },
+      {
+        "number": 3089,
+        "kind": "pull_request",
+        "title": "Add experimental Claw package schema",
+        "labels": [
+          "P3",
+          "proof: sufficient",
+          "merge-risk: 🚨 compatibility",
+          "status: 👀 ready for maintainer look",
+          "rating: 🐚 platinum hermit"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-15T17:47:43Z",
+        "updatedAt": "2026-07-22T22:19:17Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3090,
+        "kind": "pull_request",
+        "title": "Add gated Claw publication and validation",
+        "labels": [
+          "P2",
+          "rating: 🧂 unranked krab",
+          "merge-risk: 🚨 compatibility",
+          "merge-risk: 🚨 security-boundary",
+          "status: 📣 needs proof"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-15T20:12:38Z",
+        "updatedAt": "2026-07-22T22:35:31Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3091,
+        "kind": "pull_request",
+        "title": "Add gated Claw discovery and API projection",
+        "labels": [
+          "P3",
+          "merge-risk: 🚨 compatibility",
+          "merge-risk: 🚨 security-boundary",
+          "status: 📣 needs proof",
+          "rating: 🦪 silver shellfish",
+          "feature: ✨ showcase"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-15T21:04:52Z",
+        "updatedAt": "2026-07-22T22:35:33Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3092,
+        "kind": "pull_request",
+        "title": "Add gated Claw hosted feed and lifecycle proof",
+        "labels": [
+          "P2",
+          "proof: sufficient",
+          "merge-risk: 🚨 compatibility",
+          "merge-risk: 🚨 security-boundary",
+          "status: 👀 ready for maintainer look",
+          "rating: 🐚 platinum hermit",
+          "feature: ✨ showcase"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-15T22:05:08Z",
+        "updatedAt": "2026-07-22T22:36:45Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3104,
+        "kind": "issue",
+        "title": "RFC: Skill routing metadata and evaluation hints for Harness-style OpenClaw setups",
+        "labels": [
+          "P3",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "issue-rating: 🌊 off-meta tidepool",
+          "impact:ux-friction"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-16T13:00:10Z",
+        "updatedAt": "2026-07-21T19:34:49Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3116,
+        "kind": "pull_request",
+        "title": "feat: add publisher feed query and delta state",
+        "labels": [
+          "P2",
+          "merge-risk: 🚨 compatibility",
+          "status: 📣 needs proof",
+          "rating: 🦪 silver shellfish"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-16T18:11:14Z",
+        "updatedAt": "2026-07-22T06:48:47Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3117,
+        "kind": "pull_request",
+        "title": "feat: serve signed publisher feed projections",
+        "labels": [
+          "P2",
+          "rating: 🧂 unranked krab",
+          "merge-risk: 🚨 compatibility",
+          "merge-risk: 🚨 availability",
+          "status: 📣 needs proof"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-16T18:50:33Z",
+        "updatedAt": "2026-07-22T06:49:49Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3149,
+        "kind": "pull_request",
+        "title": "feat(feeds): add catalog distribution state",
+        "labels": [
+          "P2",
+          "merge-risk: 🚨 compatibility",
+          "merge-risk: 🚨 availability",
+          "status: 📣 needs proof",
+          "rating: 🦪 silver shellfish"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-17T10:29:39Z",
+        "updatedAt": "2026-07-22T06:50:37Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3160,
+        "kind": "pull_request",
+        "title": "feat(feeds): serve signed catalog queries and changes",
+        "labels": [
+          "P2",
+          "rating: 🧂 unranked krab",
+          "merge-risk: 🚨 compatibility",
+          "merge-risk: 🚨 security-boundary",
+          "merge-risk: 🚨 availability",
+          "status: 📣 needs proof"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-17T19:55:31Z",
+        "updatedAt": "2026-07-21T19:34:47Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3163,
+        "kind": "pull_request",
+        "title": "feat(feeds): publish sharded catalog snapshots",
+        "labels": [
+          "P1",
+          "rating: 🧂 unranked krab",
+          "merge-risk: 🚨 compatibility",
+          "merge-risk: 🚨 security-boundary",
+          "merge-risk: 🚨 availability",
+          "status: 📣 needs proof"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-17T22:21:04Z",
+        "updatedAt": "2026-07-22T06:51:45Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3171,
+        "kind": "pull_request",
+        "title": "future: account-hosted feed watch inbox",
+        "labels": [],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-18T02:53:18Z",
+        "updatedAt": "2026-07-21T19:34:56Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3200,
+        "kind": "issue",
+        "title": "Org owners cannot roll back latest after accidental higher-version skill publish",
+        "labels": [],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-21T03:00:24Z",
+        "updatedAt": "2026-07-21T19:34:56Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3209,
+        "kind": "pull_request",
+        "title": "chore(deps): bump the github-actions group across 1 directory with 2 updates",
+        "labels": [
+          "dependencies",
+          "github_actions",
+          "P3",
+          "merge-risk: 🚨 automation",
+          "status: 👀 ready for maintainer look",
+          "rating: 🐚 platinum hermit"
+        ],
+        "authorAssociation": "CONTRIBUTOR",
+        "createdAt": "2026-07-21T16:06:43Z",
+        "updatedAt": "2026-07-22T16:10:37Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3210,
+        "kind": "pull_request",
+        "title": "chore(deps-dev): bump oxlint-tsgolint from 0.25.0 to 7.0.2001",
+        "labels": [
+          "dependencies",
+          "javascript",
+          "P3",
+          "rating: 🧂 unranked krab",
+          "merge-risk: 🚨 compatibility",
+          "status: 📣 needs proof",
+          "merge-risk: 🚨 automation"
+        ],
+        "authorAssociation": "CONTRIBUTOR",
+        "createdAt": "2026-07-21T16:07:09Z",
+        "updatedAt": "2026-07-22T06:53:19Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3212,
+        "kind": "issue",
+        "title": "Duplicate slug rows after squat removal break publish/scan pipeline — new versions never go live (shieldcortex stuck at 4.47.12)",
+        "labels": [],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-21T16:35:13Z",
+        "updatedAt": "2026-07-22T09:01:09Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3213,
+        "kind": "issue",
+        "title": "Published package version invisible after successful publish — @niyazmft/openclaw-zulip",
+        "labels": [],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-21T21:14:19Z",
+        "updatedAt": "2026-07-22T04:52:07Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3215,
+        "kind": "pull_request",
+        "title": "chore(deps): bump the production-minor-and-patch group across 1 directory with 5 updates",
+        "labels": [
+          "dependencies",
+          "javascript",
+          "needs-cli-release"
+        ],
+        "authorAssociation": "CONTRIBUTOR",
+        "createdAt": "2026-07-22T03:53:23Z",
+        "updatedAt": "2026-07-22T16:09:46Z",
+        "missingReason": "recently_created"
+      },
+      {
+        "number": 3220,
+        "kind": "issue",
+        "title": "ClawSweeper can leave stale review-started placeholders and repeatedly re-trigger the same issue",
+        "labels": [],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-22T06:37:13Z",
+        "updatedAt": "2026-07-22T06:37:13Z",
+        "missingReason": "recently_created"
+      },
+      {
+        "number": 3222,
+        "kind": "pull_request",
+        "title": "chore(deps-dev): bump the development-minor-and-patch group with 4 updates",
+        "labels": [
+          "dependencies",
+          "javascript"
+        ],
+        "authorAssociation": "CONTRIBUTOR",
+        "createdAt": "2026-07-22T16:05:45Z",
+        "updatedAt": "2026-07-22T16:09:50Z",
+        "missingReason": "recently_created"
+      },
+      {
+        "number": 3225,
+        "kind": "pull_request",
+        "title": "feat: add publisher bulk adoption groundwork",
+        "labels": [],
+        "authorAssociation": "COLLABORATOR",
+        "createdAt": "2026-07-22T20:50:34Z",
+        "updatedAt": "2026-07-22T20:52:37Z",
+        "missingReason": "recently_created"
+      },
+      {
+        "number": 3226,
+        "kind": "pull_request",
+        "title": "feat(cli): support skills.sh install references",
+        "labels": [],
+        "authorAssociation": "COLLABORATOR",
+        "createdAt": "2026-07-22T20:51:28Z",
+        "updatedAt": "2026-07-22T20:54:05Z",
+        "missingReason": "recently_created"
+      },
+      {
+        "number": 3227,
+        "kind": "pull_request",
+        "title": "feat: add permanent skills.sh mirror storage",
+        "labels": [
+          "test-mirror-load"
+        ],
+        "authorAssociation": "COLLABORATOR",
+        "createdAt": "2026-07-22T20:52:29Z",
+        "updatedAt": "2026-07-23T02:46:19Z",
+        "missingReason": "recently_created"
+      },
+      {
+        "number": 3228,
+        "kind": "pull_request",
+        "title": "feat: separate skill popularity from bookmarks",
+        "labels": [],
+        "authorAssociation": "COLLABORATOR",
+        "createdAt": "2026-07-22T21:00:38Z",
+        "updatedAt": "2026-07-22T21:09:15Z",
+        "missingReason": "recently_created"
+      },
+      {
+        "number": 3229,
+        "kind": "pull_request",
+        "title": "feat: make skills.sh refreshes version-safe",
+        "labels": [],
+        "authorAssociation": "COLLABORATOR",
+        "createdAt": "2026-07-22T21:19:43Z",
+        "updatedAt": "2026-07-22T21:22:07Z",
+        "missingReason": "recently_created"
+      },
+      {
+        "number": 3230,
+        "kind": "pull_request",
+        "title": "feat: add verified mirrored skill adoption groundwork",
+        "labels": [],
+        "authorAssociation": "COLLABORATOR",
+        "createdAt": "2026-07-22T21:36:15Z",
+        "updatedAt": "2026-07-22T21:37:54Z",
+        "missingReason": "recently_created"
+      },
+      {
+        "number": 3231,
+        "kind": "pull_request",
+        "title": "feat: search and install mirrored skills.sh catalog",
+        "labels": [],
+        "authorAssociation": "COLLABORATOR",
+        "createdAt": "2026-07-23T00:41:43Z",
+        "updatedAt": "2026-07-23T01:02:46Z",
+        "missingReason": "recently_created"
+      }
+    ],
+    "missingEligibleOpen": [
+      {
+        "number": 86,
+        "kind": "issue",
+        "title": "Feature request: Shareable cron job templates",
+        "labels": [
+          "P3",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "issue-rating: 🌊 off-meta tidepool"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-02-01T09:23:13Z",
+        "updatedAt": "2026-07-19T18:57:59Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 575,
+        "kind": "issue",
+        "title": "Enforce uppercase SKILL.md and PROTOCOL.md",
+        "labels": [
+          "P2",
+          "clawsweeper:source-repro",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:linked-pr-open",
+          "issue-rating: 🦞 diamond lobster",
+          "impact:other"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-03-02T05:35:13Z",
+        "updatedAt": "2026-07-19T15:46:54Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 606,
+        "kind": "issue",
+        "title": "feat: add i18n support with zh-CN (Simplified Chinese) locale",
+        "labels": [
+          "P3",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "issue-rating: 🌊 off-meta tidepool",
+          "impact:other"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-03-05T15:19:31Z",
+        "updatedAt": "2026-07-19T18:58:06Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 792,
+        "kind": "issue",
+        "title": "Feature: Inject post-install/update system event into active session",
+        "labels": [
+          "enhancement",
+          "P2",
+          "clawsweeper:source-repro",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "impact:session-state",
+          "issue-rating: 🦞 diamond lobster",
+          "impact:ux-friction"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-03-13T00:17:03Z",
+        "updatedAt": "2026-07-19T18:58:08Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 1288,
+        "kind": "issue",
+        "title": "bug: publish-plugin page cannot upload plugin folders; auto-changelog overwrites edits; package changelog uses wrong history",
+        "labels": [
+          "P2",
+          "clawsweeper:source-repro",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:linked-pr-open",
+          "impact:data-loss",
+          "issue-rating: 🦞 diamond lobster"
+        ],
+        "authorAssociation": "CONTRIBUTOR",
+        "createdAt": "2026-03-26T10:27:55Z",
+        "updatedAt": "2026-07-19T18:58:09Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 1377,
+        "kind": "issue",
+        "title": "Bug: License incorrectly displayed as MIT-0 instead of MIT",
+        "labels": [
+          "P2",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:linked-pr-open",
+          "clawsweeper:current-main-repro",
+          "issue-rating: 🦀 challenger crab",
+          "impact:other"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-03-29T09:47:05Z",
+        "updatedAt": "2026-07-19T18:58:04Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 1383,
+        "kind": "issue",
+        "title": "Feature request: add prefix/list-style skill discovery to ClawHub CLI search",
+        "labels": [
+          "P2",
+          "clawsweeper:source-repro",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:linked-pr-open",
+          "issue-rating: 🦞 diamond lobster",
+          "impact:other"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-03-29T13:51:53Z",
+        "updatedAt": "2026-07-19T15:46:59Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 1679,
+        "kind": "issue",
+        "title": "ClawHub /api/v1/skills/coding-agent failed (404): Skill not found",
+        "labels": [
+          "P2",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:current-main-repro",
+          "issue-rating: 🦀 challenger crab",
+          "impact:other"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-04-14T20:21:19Z",
+        "updatedAt": "2026-07-19T15:46:47Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 1767,
+        "kind": "issue",
+        "title": "Feature request: Local plugin scanner CLI for pre-publish validation",
+        "labels": [
+          "P2",
+          "clawsweeper:source-repro",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "issue-rating: 🦞 diamond lobster"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-04-21T16:06:49Z",
+        "updatedAt": "2026-07-19T15:46:56Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 1946,
+        "kind": "issue",
+        "title": "Edit Version Changelogs",
+        "labels": [
+          "P3",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "issue-rating: 🌊 off-meta tidepool"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-04-30T14:51:44Z",
+        "updatedAt": "2026-07-19T18:57:54Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2032,
+        "kind": "issue",
+        "title": "skill safe-encryption-skill: Spec Prohibits File Output But CLI Tool's Standard Interface Is File Output",
+        "labels": [
+          "P2",
+          "clawsweeper:source-repro",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "issue-rating: 🦞 diamond lobster"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-05-05T19:25:39Z",
+        "updatedAt": "2026-07-19T19:25:37Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2216,
+        "kind": "issue",
+        "title": "RFC: Period-based popularity for publishers, skills, and plugins",
+        "labels": [
+          "P2",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:fix-shape-clear",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "issue-rating: 🌊 off-meta tidepool",
+          "impact:other"
+        ],
+        "authorAssociation": "MEMBER",
+        "createdAt": "2026-05-14T14:32:23Z",
+        "updatedAt": "2026-07-19T19:25:36Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2295,
+        "kind": "issue",
+        "title": "clawhub install does not register skill hooks automatically",
+        "labels": [
+          "P2",
+          "clawsweeper:source-repro",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "impact:session-state",
+          "issue-rating: 🦞 diamond lobster",
+          "impact:ux-friction"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-05-18T18:04:13Z",
+        "updatedAt": "2026-07-19T19:25:48Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2317,
+        "kind": "issue",
+        "title": "Consolidate skill/plugin commands in `clawhub` cli",
+        "labels": [
+          "P3",
+          "clawsweeper:source-repro",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "issue-rating: 🦞 diamond lobster",
+          "impact:other"
+        ],
+        "authorAssociation": "COLLABORATOR",
+        "createdAt": "2026-05-19T19:40:59Z",
+        "updatedAt": "2026-07-19T18:58:06Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2320,
+        "kind": "issue",
+        "title": "RFC: Org claim disputes and account recovery",
+        "labels": [
+          "type: rfc",
+          "status: review",
+          "area: moderation",
+          "area: security",
+          "P2",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "impact:auth-provider",
+          "issue-rating: 🌊 off-meta tidepool"
+        ],
+        "authorAssociation": "COLLABORATOR",
+        "createdAt": "2026-05-19T20:21:59Z",
+        "updatedAt": "2026-07-19T15:47:00Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2321,
+        "kind": "issue",
+        "title": "RFC: Content policy categories",
+        "labels": [
+          "type: rfc",
+          "status: review",
+          "area: moderation",
+          "area: security",
+          "P3",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "issue-rating: 🌊 off-meta tidepool"
+        ],
+        "authorAssociation": "COLLABORATOR",
+        "createdAt": "2026-05-19T20:22:01Z",
+        "updatedAt": "2026-07-19T18:58:09Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2330,
+        "kind": "issue",
+        "title": "Support installing all skills/plugins from a publisher",
+        "labels": [
+          "P3",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "issue-rating: 🌊 off-meta tidepool",
+          "impact:other"
+        ],
+        "authorAssociation": "COLLABORATOR",
+        "createdAt": "2026-05-19T23:49:48Z",
+        "updatedAt": "2026-07-19T18:57:54Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2356,
+        "kind": "issue",
+        "title": "Hard-delete or runtimeId migration needed for @apify/apify-openclaw-plugin",
+        "labels": [
+          "P2",
+          "clawsweeper:source-repro",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "issue-rating: 🦞 diamond lobster"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-05-21T13:58:44Z",
+        "updatedAt": "2026-07-19T15:47:02Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2367,
+        "kind": "issue",
+        "title": "Npm-valid package scopes with dots/underscores cannot map to ClawHub publishers",
+        "labels": [
+          "P2",
+          "clawsweeper:source-repro",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "issue-rating: 🦞 diamond lobster"
+        ],
+        "authorAssociation": "COLLABORATOR",
+        "createdAt": "2026-05-21T19:51:52Z",
+        "updatedAt": "2026-07-19T15:47:03Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2411,
+        "kind": "pull_request",
+        "title": "feat: add plugin verify evidence endpoint",
+        "labels": [
+          "P2",
+          "merge-risk: 🚨 compatibility",
+          "merge-risk: 🚨 security-boundary",
+          "status: 📣 needs proof",
+          "rating: 🦪 silver shellfish"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-05-27T07:57:38Z",
+        "updatedAt": "2026-07-22T06:33:36Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2524,
+        "kind": "issue",
+        "title": "GitHub OAuth consent screen uses personal ClawdHub app branding",
+        "labels": [
+          "bug",
+          "area: security",
+          "P2",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "clawsweeper:needs-info",
+          "impact:security",
+          "impact:auth-provider",
+          "issue-rating: 🦐 gold shrimp"
+        ],
+        "authorAssociation": "COLLABORATOR",
+        "createdAt": "2026-06-05T21:45:16Z",
+        "updatedAt": "2026-07-17T16:35:45Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2873,
+        "kind": "pull_request",
+        "title": "fix: preserve selected GitHub skills across resync",
+        "labels": [
+          "P2",
+          "merge-risk: 🚨 compatibility",
+          "rating: 🦐 gold shrimp",
+          "status: 👀 ready for maintainer look"
+        ],
+        "authorAssociation": "MEMBER",
+        "createdAt": "2026-06-25T07:46:43Z",
+        "updatedAt": "2026-07-21T19:35:03Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2898,
+        "kind": "pull_request",
+        "title": "fix: trust forwarded IPs from ClawHub edge",
+        "labels": [
+          "P2",
+          "merge-risk: 🚨 compatibility",
+          "merge-risk: 🚨 availability",
+          "status: ⏳ waiting on author",
+          "merge-risk: 🚨 automation",
+          "rating: 🦪 silver shellfish"
+        ],
+        "authorAssociation": "MEMBER",
+        "createdAt": "2026-06-26T16:44:59Z",
+        "updatedAt": "2026-07-22T06:34:24Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2944,
+        "kind": "issue",
+        "title": "RFC: declared capability manifest",
+        "labels": [
+          "type: rfc",
+          "status: review",
+          "P2",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "impact:security",
+          "issue-rating: 🌊 off-meta tidepool"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-01T13:21:47Z",
+        "updatedAt": "2026-07-22T06:34:54Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2945,
+        "kind": "issue",
+        "title": "RFC: policy on agent-directed instruction content in docs",
+        "labels": [
+          "type: rfc",
+          "status: review",
+          "P2",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "issue-rating: 🌊 off-meta tidepool"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-01T13:25:00Z",
+        "updatedAt": "2026-07-22T06:35:22Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2947,
+        "kind": "pull_request",
+        "title": "Add package changelog previews for plugin publishing",
+        "labels": [
+          "P2",
+          "proof: sufficient",
+          "merge-risk: 🚨 security-boundary",
+          "status: 👀 ready for maintainer look",
+          "rating: 🐚 platinum hermit"
+        ],
+        "authorAssociation": "CONTRIBUTOR",
+        "createdAt": "2026-07-01T19:30:49Z",
+        "updatedAt": "2026-07-21T19:34:46Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2948,
+        "kind": "pull_request",
+        "title": "feat: add publisher feed model API",
+        "labels": [
+          "P2",
+          "rating: 🧂 unranked krab",
+          "merge-risk: 🚨 compatibility",
+          "status: 📣 needs proof"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-01T19:49:44Z",
+        "updatedAt": "2026-07-22T06:36:16Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2949,
+        "kind": "pull_request",
+        "title": "feat: clarify publisher state and discovery labels",
+        "labels": [
+          "P2",
+          "rating: 🧂 unranked krab",
+          "merge-risk: 🚨 compatibility",
+          "merge-risk: 🚨 security-boundary",
+          "status: 📣 needs proof"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-01T20:22:50Z",
+        "updatedAt": "2026-07-22T06:36:51Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2950,
+        "kind": "pull_request",
+        "title": "feat: add publisher follow graph API",
+        "labels": [
+          "P3",
+          "merge-risk: 🚨 compatibility",
+          "merge-risk: 🚨 security-boundary",
+          "status: 📣 needs proof",
+          "rating: 🦪 silver shellfish"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-01T21:10:23Z",
+        "updatedAt": "2026-07-22T06:37:57Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2953,
+        "kind": "pull_request",
+        "title": "feat: add OpenClaw registry export bridge",
+        "labels": [
+          "P2",
+          "proof: sufficient",
+          "merge-risk: 🚨 compatibility",
+          "status: 👀 ready for maintainer look",
+          "rating: 🐚 platinum hermit"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-01T22:14:18Z",
+        "updatedAt": "2026-07-22T06:38:47Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2958,
+        "kind": "pull_request",
+        "title": "feat: add publisher following and activity timeline",
+        "labels": [
+          "P3",
+          "rating: 🧂 unranked krab",
+          "merge-risk: 🚨 compatibility",
+          "merge-risk: 🚨 security-boundary",
+          "status: 📣 needs proof"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-03T20:47:10Z",
+        "updatedAt": "2026-07-22T06:39:48Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2964,
+        "kind": "pull_request",
+        "title": "Support declared MIT skill licenses",
+        "labels": [
+          "P2",
+          "merge-risk: 🚨 compatibility",
+          "status: 📣 needs proof",
+          "rating: 🦪 silver shellfish"
+        ],
+        "authorAssociation": "CONTRIBUTOR",
+        "createdAt": "2026-07-05T02:03:42Z",
+        "updatedAt": "2026-07-22T06:40:39Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 2969,
+        "kind": "pull_request",
+        "title": "fix: add exact and prefix skill search modes",
+        "labels": [
+          "P2",
+          "status: 📣 needs proof",
+          "rating: 🦪 silver shellfish",
+          "merge-risk: 🚨 other"
+        ],
+        "authorAssociation": "CONTRIBUTOR",
+        "createdAt": "2026-07-06T10:57:03Z",
+        "updatedAt": "2026-07-22T06:41:16Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3005,
+        "kind": "pull_request",
+        "title": "feat: sign stored OpenClaw catalog publications",
+        "labels": [
+          "P2",
+          "rating: 🧂 unranked krab",
+          "merge-risk: 🚨 compatibility",
+          "merge-risk: 🚨 security-boundary",
+          "merge-risk: 🚨 availability",
+          "status: 📣 needs proof"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-08T02:56:50Z",
+        "updatedAt": "2026-07-23T03:30:09Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3006,
+        "kind": "pull_request",
+        "title": "Route org publisher abuse nominations to org review",
+        "labels": [
+          "P2",
+          "merge-risk: 🚨 security-boundary",
+          "status: ⏳ waiting on author",
+          "rating: 🐚 platinum hermit"
+        ],
+        "authorAssociation": "MEMBER",
+        "createdAt": "2026-07-08T04:37:27Z",
+        "updatedAt": "2026-07-22T06:42:59Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3023,
+        "kind": "pull_request",
+        "title": "Add dependency scanning for package releases",
+        "labels": [
+          "P2",
+          "merge-risk: 🚨 compatibility",
+          "merge-risk: 🚨 security-boundary",
+          "status: ⏳ waiting on author",
+          "rating: 🦐 gold shrimp"
+        ],
+        "authorAssociation": "MEMBER",
+        "createdAt": "2026-07-09T03:01:18Z",
+        "updatedAt": "2026-07-22T06:44:05Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3036,
+        "kind": "pull_request",
+        "title": "feat(skills): publish large bundles via staged upload",
+        "labels": [
+          "P2",
+          "rating: 🧂 unranked krab",
+          "merge-risk: 🚨 availability",
+          "status: 📣 needs proof"
+        ],
+        "authorAssociation": "CONTRIBUTOR",
+        "createdAt": "2026-07-09T17:48:55Z",
+        "updatedAt": "2026-07-21T19:34:46Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3051,
+        "kind": "issue",
+        "title": "GitHub OAuth consent still shows personal ClawdHub / steipete branding (reopen of #2524)",
+        "labels": [
+          "P2",
+          "clawsweeper:source-repro",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "impact:auth-provider",
+          "issue-rating: 🦞 diamond lobster",
+          "impact:ux-friction"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-10T05:23:01Z",
+        "updatedAt": "2026-07-22T06:44:39Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3064,
+        "kind": "issue",
+        "title": "perf: bound publisher profile, membership, and catalog reads",
+        "labels": [
+          "enhancement",
+          "P2",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-live-repro",
+          "issue-rating: 🐚 platinum hermit",
+          "impact:other"
+        ],
+        "authorAssociation": "MEMBER",
+        "createdAt": "2026-07-13T00:51:37Z",
+        "updatedAt": "2026-07-22T06:45:06Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3068,
+        "kind": "issue",
+        "title": "perf: measure and reduce the shared route entry bundle",
+        "labels": [
+          "enhancement",
+          "P3",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "issue-rating: 🌊 off-meta tidepool",
+          "impact:other"
+        ],
+        "authorAssociation": "MEMBER",
+        "createdAt": "2026-07-13T00:51:44Z",
+        "updatedAt": "2026-07-21T19:35:03Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3074,
+        "kind": "pull_request",
+        "title": "feat: forward package catalog metadata in publish workflow",
+        "labels": [
+          "P3",
+          "proof: sufficient",
+          "status: 👀 ready for maintainer look",
+          "rating: 🐚 platinum hermit"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-13T15:03:05Z",
+        "updatedAt": "2026-07-22T06:46:30Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3076,
+        "kind": "issue",
+        "title": "Clarify or preserve skill source provenance from CLI publish",
+        "labels": [
+          "P2",
+          "clawsweeper:source-repro",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "issue-rating: 🦞 diamond lobster",
+          "impact:ux-friction"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-13T15:03:42Z",
+        "updatedAt": "2026-07-22T06:36:44Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3089,
+        "kind": "pull_request",
+        "title": "Add experimental Claw package schema",
+        "labels": [
+          "P3",
+          "proof: sufficient",
+          "merge-risk: 🚨 compatibility",
+          "status: 👀 ready for maintainer look",
+          "rating: 🐚 platinum hermit"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-15T17:47:43Z",
+        "updatedAt": "2026-07-22T22:19:17Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3090,
+        "kind": "pull_request",
+        "title": "Add gated Claw publication and validation",
+        "labels": [
+          "P2",
+          "rating: 🧂 unranked krab",
+          "merge-risk: 🚨 compatibility",
+          "merge-risk: 🚨 security-boundary",
+          "status: 📣 needs proof"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-15T20:12:38Z",
+        "updatedAt": "2026-07-22T22:35:31Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3091,
+        "kind": "pull_request",
+        "title": "Add gated Claw discovery and API projection",
+        "labels": [
+          "P3",
+          "merge-risk: 🚨 compatibility",
+          "merge-risk: 🚨 security-boundary",
+          "status: 📣 needs proof",
+          "rating: 🦪 silver shellfish",
+          "feature: ✨ showcase"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-15T21:04:52Z",
+        "updatedAt": "2026-07-22T22:35:33Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3092,
+        "kind": "pull_request",
+        "title": "Add gated Claw hosted feed and lifecycle proof",
+        "labels": [
+          "P2",
+          "proof: sufficient",
+          "merge-risk: 🚨 compatibility",
+          "merge-risk: 🚨 security-boundary",
+          "status: 👀 ready for maintainer look",
+          "rating: 🐚 platinum hermit",
+          "feature: ✨ showcase"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-15T22:05:08Z",
+        "updatedAt": "2026-07-22T22:36:45Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3104,
+        "kind": "issue",
+        "title": "RFC: Skill routing metadata and evaluation hints for Harness-style OpenClaw setups",
+        "labels": [
+          "P3",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "issue-rating: 🌊 off-meta tidepool",
+          "impact:ux-friction"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-16T13:00:10Z",
+        "updatedAt": "2026-07-21T19:34:49Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3116,
+        "kind": "pull_request",
+        "title": "feat: add publisher feed query and delta state",
+        "labels": [
+          "P2",
+          "merge-risk: 🚨 compatibility",
+          "status: 📣 needs proof",
+          "rating: 🦪 silver shellfish"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-16T18:11:14Z",
+        "updatedAt": "2026-07-22T06:48:47Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3117,
+        "kind": "pull_request",
+        "title": "feat: serve signed publisher feed projections",
+        "labels": [
+          "P2",
+          "rating: 🧂 unranked krab",
+          "merge-risk: 🚨 compatibility",
+          "merge-risk: 🚨 availability",
+          "status: 📣 needs proof"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-16T18:50:33Z",
+        "updatedAt": "2026-07-22T06:49:49Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3149,
+        "kind": "pull_request",
+        "title": "feat(feeds): add catalog distribution state",
+        "labels": [
+          "P2",
+          "merge-risk: 🚨 compatibility",
+          "merge-risk: 🚨 availability",
+          "status: 📣 needs proof",
+          "rating: 🦪 silver shellfish"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-17T10:29:39Z",
+        "updatedAt": "2026-07-22T06:50:37Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3160,
+        "kind": "pull_request",
+        "title": "feat(feeds): serve signed catalog queries and changes",
+        "labels": [
+          "P2",
+          "rating: 🧂 unranked krab",
+          "merge-risk: 🚨 compatibility",
+          "merge-risk: 🚨 security-boundary",
+          "merge-risk: 🚨 availability",
+          "status: 📣 needs proof"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-17T19:55:31Z",
+        "updatedAt": "2026-07-21T19:34:47Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3163,
+        "kind": "pull_request",
+        "title": "feat(feeds): publish sharded catalog snapshots",
+        "labels": [
+          "P1",
+          "rating: 🧂 unranked krab",
+          "merge-risk: 🚨 compatibility",
+          "merge-risk: 🚨 security-boundary",
+          "merge-risk: 🚨 availability",
+          "status: 📣 needs proof"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-17T22:21:04Z",
+        "updatedAt": "2026-07-22T06:51:45Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3171,
+        "kind": "pull_request",
+        "title": "future: account-hosted feed watch inbox",
+        "labels": [],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-18T02:53:18Z",
+        "updatedAt": "2026-07-21T19:34:56Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3200,
+        "kind": "issue",
+        "title": "Org owners cannot roll back latest after accidental higher-version skill publish",
+        "labels": [],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-21T03:00:24Z",
+        "updatedAt": "2026-07-21T19:34:56Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3209,
+        "kind": "pull_request",
+        "title": "chore(deps): bump the github-actions group across 1 directory with 2 updates",
+        "labels": [
+          "dependencies",
+          "github_actions",
+          "P3",
+          "merge-risk: 🚨 automation",
+          "status: 👀 ready for maintainer look",
+          "rating: 🐚 platinum hermit"
+        ],
+        "authorAssociation": "CONTRIBUTOR",
+        "createdAt": "2026-07-21T16:06:43Z",
+        "updatedAt": "2026-07-22T16:10:37Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3210,
+        "kind": "pull_request",
+        "title": "chore(deps-dev): bump oxlint-tsgolint from 0.25.0 to 7.0.2001",
+        "labels": [
+          "dependencies",
+          "javascript",
+          "P3",
+          "rating: 🧂 unranked krab",
+          "merge-risk: 🚨 compatibility",
+          "status: 📣 needs proof",
+          "merge-risk: 🚨 automation"
+        ],
+        "authorAssociation": "CONTRIBUTOR",
+        "createdAt": "2026-07-21T16:07:09Z",
+        "updatedAt": "2026-07-22T06:53:19Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3212,
+        "kind": "issue",
+        "title": "Duplicate slug rows after squat removal break publish/scan pipeline — new versions never go live (shieldcortex stuck at 4.47.12)",
+        "labels": [],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-21T16:35:13Z",
+        "updatedAt": "2026-07-22T09:01:09Z",
+        "missingReason": "eligible"
+      },
+      {
+        "number": 3213,
+        "kind": "issue",
+        "title": "Published package version invisible after successful publish — @niyazmft/openclaw-zulip",
+        "labels": [],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-21T21:14:19Z",
+        "updatedAt": "2026-07-22T04:52:07Z",
+        "missingReason": "eligible"
+      }
+    ],
+    "missingMaintainerOpen": [],
+    "missingProtectedOpen": [
+      {
+        "number": 2272,
+        "kind": "issue",
+        "title": "RFC: Define a public review path for vetted community plugins",
+        "labels": [
+          "r: rescan-guidance",
+          "security",
+          "type: rfc",
+          "status: review",
+          "area: moderation",
+          "area: security",
+          "P2",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:fix-shape-clear",
+          "clawsweeper:needs-maintainer-review",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "issue-rating: 🌊 off-meta tidepool"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-05-15T09:53:11Z",
+        "updatedAt": "2026-06-07T13:54:57Z",
+        "missingReason": "protected_label"
+      },
+      {
+        "number": 2365,
+        "kind": "issue",
+        "title": "Add standalone GitHub Action for plugin publishing",
+        "labels": [
+          "security",
+          "P2",
+          "clawsweeper:no-new-fix-pr",
+          "clawsweeper:needs-product-decision",
+          "clawsweeper:needs-security-review",
+          "impact:security",
+          "issue-rating: 🌊 off-meta tidepool"
+        ],
+        "authorAssociation": "COLLABORATOR",
+        "createdAt": "2026-05-21T18:57:33Z",
+        "updatedAt": "2026-05-27T01:08:10Z",
+        "missingReason": "protected_label"
+      },
+      {
+        "number": 2925,
+        "kind": "issue",
+        "title": "Proposal: staged web performance audit and SSR auth plan",
+        "labels": [
+          "security"
+        ],
+        "authorAssociation": "MEMBER",
+        "createdAt": "2026-06-28T18:37:06Z",
+        "updatedAt": "2026-07-13T16:10:03Z",
+        "missingReason": "protected_label"
+      },
+      {
+        "number": 2943,
+        "kind": "issue",
+        "title": "RFC: cross-asset security signals in the skill review pipeline (docs/config/scripts)",
+        "labels": [
+          "security",
+          "type: rfc",
+          "status: review"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-01T13:03:51Z",
+        "updatedAt": "2026-07-01T13:04:04Z",
+        "missingReason": "protected_label"
+      },
+      {
+        "number": 3075,
+        "kind": "issue",
+        "title": "Expose trusted GitHub Actions publisher separately from artifact provenance",
+        "labels": [
+          "security"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-13T15:03:42Z",
+        "updatedAt": "2026-07-13T15:04:02Z",
+        "missingReason": "protected_label"
+      },
+      {
+        "number": 3083,
+        "kind": "issue",
+        "title": "Proposal: optional pre-install known-bad check for ClawHub skills (free)",
+        "labels": [
+          "security"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-14T18:33:03Z",
+        "updatedAt": "2026-07-14T18:33:22Z",
+        "missingReason": "protected_label"
+      },
+      {
+        "number": 3086,
+        "kind": "issue",
+        "title": "Official external plugin review: @nexez/openclaw-nexez",
+        "labels": [
+          "security"
+        ],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-15T03:39:27Z",
+        "updatedAt": "2026-07-15T03:39:41Z",
+        "missingReason": "protected_label"
+      }
+    ],
+    "missingRecentOpen": [
+      {
+        "number": 3215,
+        "kind": "pull_request",
+        "title": "chore(deps): bump the production-minor-and-patch group across 1 directory with 5 updates",
+        "labels": [
+          "dependencies",
+          "javascript",
+          "needs-cli-release"
+        ],
+        "authorAssociation": "CONTRIBUTOR",
+        "createdAt": "2026-07-22T03:53:23Z",
+        "updatedAt": "2026-07-22T16:09:46Z",
+        "missingReason": "recently_created"
+      },
+      {
+        "number": 3220,
+        "kind": "issue",
+        "title": "ClawSweeper can leave stale review-started placeholders and repeatedly re-trigger the same issue",
+        "labels": [],
+        "authorAssociation": "NONE",
+        "createdAt": "2026-07-22T06:37:13Z",
+        "updatedAt": "2026-07-22T06:37:13Z",
+        "missingReason": "recently_created"
+      },
+      {
+        "number": 3222,
+        "kind": "pull_request",
+        "title": "chore(deps-dev): bump the development-minor-and-patch group with 4 updates",
+        "labels": [
+          "dependencies",
+          "javascript"
+        ],
+        "authorAssociation": "CONTRIBUTOR",
+        "createdAt": "2026-07-22T16:05:45Z",
+        "updatedAt": "2026-07-22T16:09:50Z",
+        "missingReason": "recently_created"
+      },
+      {
+        "number": 3225,
+        "kind": "pull_request",
+        "title": "feat: add publisher bulk adoption groundwork",
+        "labels": [],
+        "authorAssociation": "COLLABORATOR",
+        "createdAt": "2026-07-22T20:50:34Z",
+        "updatedAt": "2026-07-22T20:52:37Z",
+        "missingReason": "recently_created"
+      },
+      {
+        "number": 3226,
+        "kind": "pull_request",
+        "title": "feat(cli): support skills.sh install references",
+        "labels": [],
+        "authorAssociation": "COLLABORATOR",
+        "createdAt": "2026-07-22T20:51:28Z",
+        "updatedAt": "2026-07-22T20:54:05Z",
+        "missingReason": "recently_created"
+      },
+      {
+        "number": 3227,
+        "kind": "pull_request",
+        "title": "feat: add permanent skills.sh mirror storage",
+        "labels": [
+          "test-mirror-load"
+        ],
+        "authorAssociation": "COLLABORATOR",
+        "createdAt": "2026-07-22T20:52:29Z",
+        "updatedAt": "2026-07-23T02:46:19Z",
+        "missingReason": "recently_created"
+      },
+      {
+        "number": 3228,
+        "kind": "pull_request",
+        "title": "feat: separate skill popularity from bookmarks",
+        "labels": [],
+        "authorAssociation": "COLLABORATOR",
+        "createdAt": "2026-07-22T21:00:38Z",
+        "updatedAt": "2026-07-22T21:09:15Z",
+        "missingReason": "recently_created"
+      },
+      {
+        "number": 3229,
+        "kind": "pull_request",
+        "title": "feat: make skills.sh refreshes version-safe",
+        "labels": [],
+        "authorAssociation": "COLLABORATOR",
+        "createdAt": "2026-07-22T21:19:43Z",
+        "updatedAt": "2026-07-22T21:22:07Z",
+        "missingReason": "recently_created"
+      },
+      {
+        "number": 3230,
+        "kind": "pull_request",
+        "title": "feat: add verified mirrored skill adoption groundwork",
+        "labels": [],
+        "authorAssociation": "COLLABORATOR",
+        "createdAt": "2026-07-22T21:36:15Z",
+        "updatedAt": "2026-07-22T21:37:54Z",
+        "missingReason": "recently_created"
+      },
+      {
+        "number": 3231,
+        "kind": "pull_request",
+        "title": "feat: search and install mirrored skills.sh catalog",
+        "labels": [],
+        "authorAssociation": "COLLABORATOR",
+        "createdAt": "2026-07-23T00:41:43Z",
+        "updatedAt": "2026-07-23T01:02:46Z",
+        "missingReason": "recently_created"
+      }
+    ],
+    "openArchived": [],
+    "staleItemRecords": [],
+    "duplicateRecords": [],
+    "protectedProposed": [],
+    "staleReviews": []
+  }
+}
