@@ -8,7 +8,7 @@
     "number": 133,
     "title": "cli: status line機能のPhase 1を追加",
     "url": "https://github.com/asura-ai-dev/garuda/pull/133",
-    "state": "open",
+    "state": "closed",
     "labels": [],
     "createdAt": "2026-07-22T22:18:57Z",
     "updatedAt": "2026-07-23T04:29:45Z",
@@ -41,7 +41,7 @@
     "confidence": "medium"
   },
   "source": {
-    "reportPath": "records/asura-ai-dev-garuda/items/133.md",
+    "reportPath": "records/asura-ai-dev-garuda/closed/133.md",
     "reviewedAt": "2026-07-23T04:31:10.249Z",
     "mainSha": "a717cdaebe9ee31bd67221dbd147cefa8801f02d"
   }
