@@ -1,13 +1,13 @@
 {
   "status": "executed",
-  "generated_at": "2026-07-25T03:24:45.060Z",
+  "generated_at": "2026-07-25T03:28:13.424Z",
   "repo": "asura-ai-dev/garuda",
   "repair_repo": "asura-ai-dev/clawsweeper",
   "review_repo": "asura-ai-dev/clawsweeper",
-  "since": "2026-07-25T00:24:43.232Z",
+  "since": "2026-07-25T00:28:12.232Z",
   "execute": true,
-  "force_reprocess": false,
-  "forced_replay_attempt_id": null,
+  "force_reprocess": true,
+  "forced_replay_attempt_id": "forced-replay-30142291066",
   "max_comments": 100,
   "item_numbers": [
     146
@@ -17,7 +17,7 @@
   "max_autoclose_targets": 8,
   "scanned_comments": 1,
   "commands_seen": 1,
-  "actionable": 0,
+  "actionable": 1,
   "trusted_bots": [
     "clawsweeper[bot]",
     "openclaw-clawsweeper[bot]"
@@ -55,7 +55,7 @@
       "trusted_bot": false,
       "trusted_bot_author": null,
       "automation_source": null,
-      "repair_reason": null,
+      "repair_reason": "autofix enabled; current checks are failing: docs非追跡ガード:FAILURE, tool-catalog:FAILURE, security:FAILURE, data-layer:FAILURE, runtime-adapter-contract:FAILURE",
       "review_summary": null,
       "review_followup": null,
       "freeform_prompt": null,
@@ -70,37 +70,221 @@
       "expected_item_updated_at": null,
       "expected_source_revision": null,
       "finding_id": null,
+      "forced_replay": true,
+      "attempt_id": "forced-replay-30142291066",
       "status": "waiting",
-      "actions": [],
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "job_path": "jobs/asura-ai-dev/inbox/automerge-asura-ai-dev-garuda-146.md",
+          "status": "executed",
+          "mode": "autonomous",
+          "cluster_id": "automerge-asura-ai-dev-garuda-146",
+          "status_detail": "written"
+        },
+        {
+          "action": "label",
+          "label": "clawsweeper:autofix",
+          "status": "executed"
+        },
+        {
+          "action": "dispatch_repair",
+          "workflow": "repair-cluster-worker.yml",
+          "job_path": "jobs/asura-ai-dev/inbox/automerge-asura-ai-dev-garuda-146.md",
+          "mode": "autonomous",
+          "status": "waiting",
+          "reason": "adopted job must be committed before worker dispatch"
+        },
+        {
+          "action": "comment",
+          "status": "pending"
+        }
+      ],
       "author_repository_permission": "admin",
-      "reason": "GitHub lookup failed; will retry later: GraphQL: Resource not accessible by integration (repository.pullRequest.statusCheckRollup.nodes.0.commit.statusCheckRollup) Command failed: gh pr view 146 --repo asura-ai-dev/garuda --json additions,headRefName,headRefOid,author,baseRefName"
+      "target": {
+        "kind": "pull_request",
+        "title": "feat(runtime-a): CG-1 opaque profile resolverを実装",
+        "body": "## 目的\n\nCG-1(opaque profile resolver)を `packages/runtime-a` 内部に実装する(phase2-l1 T-04)。\nCodex/Grok/Gemini/opencode を同じ `auth_profile_id` 抽象で扱うための境界(profile registry、\nsubject policy、provider context selector、env allowlist、auth audit policy、session\nimmutable binding)を追加する。設計正本は `agent-docs/tasks/phase2-l1-cg-1/plan.md`\n(T-03成果物)。\n\n## 変更内容\n\n- `src/auth/profile-registry.ts`(新規): 7 field だけを保持する opaque profile registry\n- `src/auth/subject-policy.ts`(新規): actor/persona/device/task の fail-closed 検査\n- `src/auth/provider-context.ts`(新規): trusted provider context selector + resolver\n- `src/auth/credential-shape.ts`(新規): credential 形状の共有検出ロジック\n- `src/auth/index.ts`: `resolveProfile` 追加、`auth_profile_id` を固定namespace\n  (`garuda-authprofile-<32桁hex>`)のnominal ID形式へ限定\n- `src/process/index.ts`: env allowlist builder。production用 `providerContext`\n  (CODEX_HOME/GROK_HOME限定・絶対path必須)とtest-only `environment` を分離し、\n  双方に credential 形状検査を適用\n- `src/session/index.ts`: session auth binding store(create/resume/fork の immutable bind)\n- `src/adapter.ts`: 上記を `createRuntimeAAdapter` へ実配線(auth option 完全構成時のみ\n  有効化。部分構成はfail-closedで拒否、未指定時は既存の非auth利用と互換)\n- `src/providers/index.ts`: Codex/Grok の確定済み auth mapping 定数を追加(既存3\n  protocol値は不変。Gemini/opencodeはGM-0/OC-0待ちで追加なし)\n\n## 検証証拠\n\n- 機械ゲート: `npm test --prefix packages/runtime-a` 158/158 pass、\n  `npm run typecheck --prefix packages/runtime-a` exit 0(コーディネータが独立実行で確認)\n- 差分は `packages/runtime-a/**` の15ファイルのみに閉じる(`packages/runtime-adapter-contract/**`、\n  他package、`docs/**` への変更なし)\n- judge(Fable 5 max、rubric.md 全27項目に対して敵対的判定): **PASS**\n- PR前レビュー(Fable 5 観点生成 → Codex GPT-5.6-Sol xhigh 実査、author≠judge≠reviewer):\n  4周にわたり P1 計5件・P2 4件(うち1 refuted)を検出・修正・独立検証。\n  詳細は `agent-docs/tasks/phase2-l1-cg-1/review-ledger-cg1.md`(ローカルのみ)参照。\n  - R1: auth binding が production adapter に未配線で subject policy が fail-open だった点、\n    auth_profile_id の credential/PII 拒否が弱かった点、env denylist の境界不一致を修正\n  - R2: credential prefix 列挙方式の構造的限界(未列挙形式のバイパス)を、固定namespace\n    + 32桁hex の nominal ID 形式へ変更して解消\n  - R3: gateway 互換性のため env 型制限を緩めた副作用で再発した credential 検出漏れ\n    (BASIC_AUTH/SESSIONCOOKIE/OPENAIKEY/GITLAB_PAT 等)を、production用 `providerContext`\n    と test-only `environment` の分離、および双方への検査強化で解消\n  - 全指摘はコーディネータが `npx tsx` による直接実行、またはコードの直接確認で独立検証済み\n- QA(実画面操作): 対象外と設計段階で判断(内部ライブラリでUI/CLI surfaceの変更なし。\n  plan.md完了条件「公開docs/changelog更新不要」と一致)\n\n## 既知の残課題(P2、非ブロッカー)\n\n- `authSessionBindingStore` を省略して adapter を再構築すると binding が非永続(fail-closed な\n  形での劣化、不正成功ではない)\n- 「resolver成功はreadyではない」テストの一部 spy が実 session/turn 実装に未接続\n\n## 参照\n\n- 設計: `agent-docs/tasks/phase2-l1-cg-1/plan.md`\n- 受け入れ基準: `agent-docs/tasks/phase2-l1-cg-1/rubric.md`\n- レビュー台帳: `agent-docs/tasks/phase2-l1-cg-1/review-ledger-cg1.md`\n",
+        "branch": "asura-ai-dev/phase2-l1-cg-1",
+        "head_sha": "40393b1bc7fac7d4649588a9add3df7e11ef37bf",
+        "author": "asura-ai-dev",
+        "labels": [
+          "clawsweeper:autofix"
+        ],
+        "files": [
+          {
+            "path": "packages/runtime-a/src/adapter.ts",
+            "additions": 79,
+            "deletions": 2,
+            "changeType": "MODIFIED"
+          },
+          {
+            "path": "packages/runtime-a/src/auth/credential-shape.ts",
+            "additions": 22,
+            "deletions": 0,
+            "changeType": "ADDED"
+          },
+          {
+            "path": "packages/runtime-a/src/auth/index.ts",
+            "additions": 43,
+            "deletions": 4,
+            "changeType": "MODIFIED"
+          },
+          {
+            "path": "packages/runtime-a/src/auth/profile-registry.ts",
+            "additions": 198,
+            "deletions": 0,
+            "changeType": "ADDED"
+          },
+          {
+            "path": "packages/runtime-a/src/auth/provider-context.ts",
+            "additions": 165,
+            "deletions": 0,
+            "changeType": "ADDED"
+          },
+          {
+            "path": "packages/runtime-a/src/auth/subject-policy.ts",
+            "additions": 71,
+            "deletions": 0,
+            "changeType": "ADDED"
+          },
+          {
+            "path": "packages/runtime-a/src/process/index.ts",
+            "additions": 86,
+            "deletions": 2,
+            "changeType": "MODIFIED"
+          },
+          {
+            "path": "packages/runtime-a/src/providers/index.ts",
+            "additions": 20,
+            "deletions": 0,
+            "changeType": "MODIFIED"
+          },
+          {
+            "path": "packages/runtime-a/src/session/index.ts",
+            "additions": 170,
+            "deletions": 2,
+            "changeType": "MODIFIED"
+          },
+          {
+            "path": "packages/runtime-a/tests/audit-gateway.test.ts",
+            "additions": 3,
+            "deletions": 1,
+            "changeType": "MODIFIED"
+          },
+          {
+            "path": "packages/runtime-a/tests/auth-boundary.test.ts",
+            "additions": 10,
+            "deletions": 5,
+            "changeType": "MODIFIED"
+          },
+          {
+            "path": "packages/runtime-a/tests/auth-profile-adapter.integration.test.ts",
+            "additions": 222,
+            "deletions": 0,
+            "changeType": "ADDED"
+          },
+          {
+            "path": "packages/runtime-a/tests/auth-profile-registry.test.ts",
+            "additions": 505,
+            "deletions": 0,
+            "changeType": "ADDED"
+          },
+          {
+            "path": "packages/runtime-a/tests/auth-profile-session-binding.test.ts",
+            "additions": 161,
+            "deletions": 0,
+            "changeType": "ADDED"
+          },
+          {
+            "path": "packages/runtime-a/tests/process.test.ts",
+            "additions": 4,
+            "deletions": 4,
+            "changeType": "MODIFIED"
+          }
+        ],
+        "changedFiles": 15,
+        "additions": 1759,
+        "deletions": 20,
+        "is_clawsweeper_pr": false,
+        "cluster_id": "automerge-asura-ai-dev-garuda-146",
+        "job_path": "jobs/asura-ai-dev/inbox/automerge-asura-ai-dev-garuda-146.md",
+        "source_job_path": null,
+        "has_automerge_job": true,
+        "automerge_cluster_id": "automerge-asura-ai-dev-garuda-146",
+        "automerge_job_path": "jobs/asura-ai-dev/inbox/automerge-asura-ai-dev-garuda-146.md",
+        "mode": "autonomous",
+        "mergeable": "MERGEABLE",
+        "merge_state_status": "UNSTABLE",
+        "review_decision": "",
+        "checks": {
+          "total": 12,
+          "gatingTotal": 12,
+          "counts": {
+            "FAILURE": 12
+          },
+          "blockers": [
+            "docs非追跡ガード:FAILURE",
+            "tool-catalog:FAILURE",
+            "security:FAILURE",
+            "data-layer:FAILURE",
+            "runtime-adapter-contract:FAILURE",
+            "memory-skill-loop:FAILURE",
+            "runtime-a:FAILURE",
+            "runtime-b:FAILURE",
+            "orchestration:FAILURE",
+            "gateway:FAILURE",
+            "cli:FAILURE",
+            "web:FAILURE"
+          ],
+          "pending": [],
+          "terminalBlockers": [
+            "docs非追跡ガード:FAILURE",
+            "tool-catalog:FAILURE",
+            "security:FAILURE",
+            "data-layer:FAILURE",
+            "runtime-adapter-contract:FAILURE",
+            "memory-skill-loop:FAILURE",
+            "runtime-a:FAILURE",
+            "runtime-b:FAILURE",
+            "orchestration:FAILURE",
+            "gateway:FAILURE",
+            "cli:FAILURE",
+            "web:FAILURE"
+          ],
+          "externalBlockers": []
+        }
+      },
+      "maintainer_authorized": true,
+      "author_readonly_authorized": false,
+      "processed_at": "2026-07-25T03:28:13.606Z"
     }
   ],
   "exact_comment_version_fast_path": {
     "suppress": false,
-    "reason": "auth_uncertain"
+    "reason": "force_reprocess"
   },
   "short_circuited": false,
-  "ledger_claimed": false,
+  "ledger_claimed": true,
   "ledger_changed": true,
   "timings": {
-    "total_ms": 2134,
+    "total_ms": 3315,
     "phases": [
       {
         "name": "list_candidate_comments",
-        "ms": 384
+        "ms": 329
       },
       {
         "name": "prehydrate_comment_commands",
-        "ms": 804
+        "ms": 803
       },
       {
         "name": "classify_comment_commands",
-        "ms": 314
+        "ms": 17
       },
       {
         "name": "prehydrate_repair_loop_sweeps",
-        "ms": 1
+        "ms": 0
       },
       {
         "name": "classify_repair_loop_sweeps",
@@ -108,11 +292,11 @@
       },
       {
         "name": "claim_dispatch_commands",
-        "ms": 0
+        "ms": 1
       },
       {
         "name": "execute_commands",
-        "ms": 256
+        "ms": 2122
       },
       {
         "name": "append_ledger",
