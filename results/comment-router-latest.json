@@ -1,10 +1,10 @@
 {
   "status": "executed",
-  "generated_at": "2026-07-25T03:28:13.424Z",
+  "generated_at": "2026-07-25T03:28:21.485Z",
   "repo": "asura-ai-dev/garuda",
   "repair_repo": "asura-ai-dev/clawsweeper",
   "review_repo": "asura-ai-dev/clawsweeper",
-  "since": "2026-07-25T00:28:12.232Z",
+  "since": "2026-07-25T00:28:20.369Z",
   "execute": true,
   "force_reprocess": true,
   "forced_replay_attempt_id": "forced-replay-30142291066",
@@ -72,16 +72,8 @@
       "finding_id": null,
       "forced_replay": true,
       "attempt_id": "forced-replay-30142291066",
-      "status": "waiting",
+      "status": "executed",
       "actions": [
-        {
-          "action": "ensure_automerge_job",
-          "job_path": "jobs/asura-ai-dev/inbox/automerge-asura-ai-dev-garuda-146.md",
-          "status": "executed",
-          "mode": "autonomous",
-          "cluster_id": "automerge-asura-ai-dev-garuda-146",
-          "status_detail": "written"
-        },
         {
           "action": "label",
           "label": "clawsweeper:autofix",
@@ -92,12 +84,16 @@
           "workflow": "repair-cluster-worker.yml",
           "job_path": "jobs/asura-ai-dev/inbox/automerge-asura-ai-dev-garuda-146.md",
           "mode": "autonomous",
-          "status": "waiting",
-          "reason": "adopted job must be committed before worker dispatch"
+          "status": "executed",
+          "dispatched_at": "2026-07-25T03:28:31.981Z",
+          "run_url": "https://github.com/asura-ai-dev/clawsweeper/actions/runs/30142313812"
         },
         {
           "action": "comment",
-          "status": "pending"
+          "status": "executed",
+          "commented_at": "2026-07-25T03:28:32.843Z",
+          "response_comment_id": null,
+          "response_comment_mode": "created"
         }
       ],
       "author_repository_permission": "admin",
@@ -257,7 +253,7 @@
       },
       "maintainer_authorized": true,
       "author_readonly_authorized": false,
-      "processed_at": "2026-07-25T03:28:13.606Z"
+      "processed_at": "2026-07-25T03:28:21.648Z"
     }
   ],
   "exact_comment_version_fast_path": {
@@ -268,15 +264,15 @@
   "ledger_claimed": true,
   "ledger_changed": true,
   "timings": {
-    "total_ms": 3315,
+    "total_ms": 12703,
     "phases": [
       {
         "name": "list_candidate_comments",
-        "ms": 329
+        "ms": 338
       },
       {
         "name": "prehydrate_comment_commands",
-        "ms": 803
+        "ms": 721
       },
       {
         "name": "classify_comment_commands",
@@ -292,11 +288,11 @@
       },
       {
         "name": "claim_dispatch_commands",
-        "ms": 1
+        "ms": 0
       },
       {
         "name": "execute_commands",
-        "ms": 2122
+        "ms": 11585
       },
       {
         "name": "append_ledger",
