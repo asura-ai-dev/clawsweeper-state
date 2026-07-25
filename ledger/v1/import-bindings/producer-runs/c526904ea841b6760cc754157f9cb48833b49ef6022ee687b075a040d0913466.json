@@ -1,0 +1,1 @@
+{"partition_date":"2026-07-25","producer":{"job":"apply-existing","producer":"apply_decisions.apply-existing-run.48eafb38d826bc2e","repository":"asura-ai-dev/clawsweeper","runAttempt":1,"runId":"30138939007","sha":"48bb7f83d1caa3fe6b12683d047f47855188c98c","workflow":"sweep.yml"},"schema":"clawsweeper.action-ledger-import-producer-run","schema_version":1}
